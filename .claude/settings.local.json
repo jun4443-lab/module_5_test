@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Invoke-WebRequest -Uri ''https://nodejs.org/dist/v20.11.1/node-v20.11.1-x64.msi'' -OutFile ''C:\\\\Users\\\\student\\\\Desktop\\\\node-install.msi''\")",
+      "Bash(powershell -Command \"Start-Process msiexec.exe -ArgumentList ''/i'', ''C:\\\\Users\\\\student\\\\Desktop\\\\node-install.msi'', ''/qn'', ''/norestart'' -Wait -Verb RunAs\")",
+      "Bash(powershell -Command \"& ''C:\\\\Program Files\\\\nodejs\\\\node.exe'' --version; & ''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'' --version\")"
+    ]
+  }
+}
